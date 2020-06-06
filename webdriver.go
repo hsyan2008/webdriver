@@ -10,7 +10,6 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
-
 	//	"fmt"
 	//	"net/http"
 )
@@ -114,7 +113,7 @@ type Cookie struct {
 	Path   string
 	Domain string
 	Secure bool
-	Expiry int
+	Expiry json.Number
 }
 
 type GeoLocation struct {
